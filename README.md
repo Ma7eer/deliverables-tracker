@@ -13,3 +13,9 @@ The project is a deliverables tracker that will list deliverables for a particul
 - Each deliverable can be toggled (approved, pending approval, not sent yet)
 - We can perform CRUD on the deliverable
 - We can add a link to send us to the deliverable
+
+## Resource
+
+A list of resources I kept going back to in order to build this project (not including stack overflow):
+
+- https://material.angular.io/
