@@ -3,7 +3,7 @@
 }
 
 /* Source: https://stackoverflow.com/questions/3250790/making-a-div-that-covers-the-entire-page */
-.overlay {
+.my-overlay {
   opacity: 0.8;
   position: fixed;
   width: 100%;
@@ -11,4 +11,14 @@
   top: 0px;
   left: 0px;
   z-index: 1000;
+}
+
+.my-fixed-container {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
