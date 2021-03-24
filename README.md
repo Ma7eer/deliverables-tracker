@@ -1,27 +1,15 @@
-# DeliverablesTracker
+# Deliverables Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+This is a demo application that I am building to learn Angular in preparation for an upcoming project.
 
-## Development server
+The project is a deliverables tracker that will list deliverables for a particular project and their status.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## User Story
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- The user can view a list of projects
+- The user can perform CRUD operations on the projects
+- Each project can send you to another page
+- This other page has a list of deliverable
+- Each deliverable can be toggled (approved, pending approval, not sent yet)
+- We can perform CRUD on the deliverable
+- We can add a link to send us to the deliverable
