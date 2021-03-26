@@ -11,6 +11,8 @@
   top: 0px;
   left: 0px;
   z-index: 1000;
+  /* To allow the background to be scroll-able we add the below */
+  overflow-y: auto;
 }
 
 .my-fixed-container {
