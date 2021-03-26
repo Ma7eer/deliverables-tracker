@@ -19,3 +19,4 @@ The project is a deliverables tracker that will list deliverables for a particul
 A list of resources I kept going back to in order to build this project (not including stack overflow):
 
 - https://material.angular.io/
+- https://angular.io/guide/router

@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-projects.component.css']
 })
 export class ViewProjectsComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
