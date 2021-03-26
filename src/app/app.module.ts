@@ -11,14 +11,16 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { TableComponent } from './table/table.component';
 import { TableTitleComponent } from './table-title/table-title.component';
-import { ViewProjectsComponent } from './view-projects/view-projects.component'
+import { ViewProjectsComponent } from './view-projects/view-projects.component';
+import { ViewDeliverablesComponent } from './view-deliverables/view-deliverables.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     TableTitleComponent,
-    ViewProjectsComponent
+    ViewProjectsComponent,
+    ViewDeliverablesComponent
   ],
   imports: [
     BrowserModule,
