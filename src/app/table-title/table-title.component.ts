@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from "@angular/common";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-table-title',
@@ -7,15 +8,17 @@ import { Location } from "@angular/common";
   styleUrls: ['./table-title.component.css']
 })
 export class TableTitleComponent implements OnInit {
-  title:string = "";
+  tableTitle:string = "";
+  projectName:string|null = "";
 
-  constructor(private location: Location) {  }
+  constructor(private location: Location, private route: ActivatedRoute,) {  }
 
   ngOnInit(): void {
     if (this.location.path() === "/projects") {
-      this.title = "Project List";
-    } else if (this.location.path() === "/deliverables") {
-      this.title = "Deliverables List"
+      this.tableTitle = "Project List";
+    } else if (this.location.path().includes("/deliverables") ) {
+      this.projectName = this.route.snapshot.paramMap.get("project")
+      this.tableTitle = `Deliverables List: ${this.projectName}`
     }
     
   }

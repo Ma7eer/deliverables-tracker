@@ -8,7 +8,7 @@ const routes: Routes = [
     path: 'projects', component: ViewProjectsComponent
   },
   {
-    path: 'deliverables', component: ViewDeliverablesComponent
+    path: 'deliverables/:project', component: ViewDeliverablesComponent
   },
   {
     path: '', redirectTo: '/projects', pathMatch: 'full' 

@@ -20,3 +20,4 @@ A list of resources I kept going back to in order to build this project (not inc
 
 - https://material.angular.io/
 - https://angular.io/guide/router
+- https://blog.angular-university.io/angular-material-data-table/
