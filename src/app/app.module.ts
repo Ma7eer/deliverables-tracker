@@ -9,6 +9,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatButtonModule } from '@angular/material/button';
 import { TableTitleComponent } from './table-title/table-title.component';
 import { ViewProjectsComponent } from './view-projects/view-projects.component';
 import { ViewDeliverablesComponent } from './view-deliverables/view-deliverables.component';
@@ -31,7 +32,8 @@ import { DeliverableTableComponent } from './deliverable-table/deliverable-table
     MatTableModule,
     MatCardModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
