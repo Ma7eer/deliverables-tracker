@@ -10,13 +10,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { TableComponent } from './table/table.component';
-import { TableTitleComponent } from './table-title/table-title.component'
+import { TableTitleComponent } from './table-title/table-title.component';
+import { ViewProjectsComponent } from './view-projects/view-projects.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    TableTitleComponent
+    TableTitleComponent,
+    ViewProjectsComponent
   ],
   imports: [
     BrowserModule,
