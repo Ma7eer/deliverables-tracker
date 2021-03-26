@@ -17,6 +17,7 @@ import { ProjectTableComponent } from './project-table/project-table.component';
 import { DeliverableTableComponent } from './deliverable-table/deliverable-table.component'
 
 import { ProjectsService } from './projects.service';
+import { DeliverablesService } from './deliverables.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { ProjectsService } from './projects.service';
     MatSortModule,
     MatButtonModule
   ],
-  providers: [ProjectsService],
+  providers: [ProjectsService, DeliverablesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

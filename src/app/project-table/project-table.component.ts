@@ -11,8 +11,7 @@ import { IProject, ProjectsService } from '../projects.service';
 })
 export class ProjectTableComponent implements AfterViewInit {
   displayedColumns: string[] = ['id', 'project', 'description', 'action'];
-  ELEMENT_DATA:IProject[] = this._projectsList.getProjects();
-  dataSource = new MatTableDataSource<IProject>(this.ELEMENT_DATA);
+  dataSource = new MatTableDataSource<IProject>(this._projectsList.getProjects());
 
   constructor(private _projectsList: ProjectsService) { }
 
@@ -20,6 +19,16 @@ export class ProjectTableComponent implements AfterViewInit {
   @ViewChild(MatSort) sort!: MatSort;
 
   ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
+
+  openDialog() {
+    console.log("open")
+    this._projectsList.add().subscribe(data => {
+      console.log(data);
+      this.dataSource = new MatTableDataSource<IProject>(data);
+    });
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }

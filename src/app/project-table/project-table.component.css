@@ -11,3 +11,7 @@ table {
 th.mat-sort-header-sorted {
   color: black;
 }
+
+button {
+  margin-bottom: 12px;
+}
