@@ -12,7 +12,9 @@ import { MatSortModule } from '@angular/material/sort';
 import { TableComponent } from './table/table.component';
 import { TableTitleComponent } from './table-title/table-title.component';
 import { ViewProjectsComponent } from './view-projects/view-projects.component';
-import { ViewDeliverablesComponent } from './view-deliverables/view-deliverables.component'
+import { ViewDeliverablesComponent } from './view-deliverables/view-deliverables.component';
+import { ProjectTableComponent } from './project-table/project-table.component';
+import { DeliverableTableComponent } from './deliverable-table/deliverable-table.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ViewDeliverablesComponent } from './view-deliverables/view-deliverables
     TableComponent,
     TableTitleComponent,
     ViewProjectsComponent,
-    ViewDeliverablesComponent
+    ViewDeliverablesComponent,
+    ProjectTableComponent,
+    DeliverableTableComponent
   ],
   imports: [
     BrowserModule,

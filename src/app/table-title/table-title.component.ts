@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from "@angular/common";
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-table-title',
@@ -10,7 +9,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class TableTitleComponent implements OnInit {
   title:string = "";
 
-  constructor(private route: ActivatedRoute, private location: Location) {  }
+  constructor(private location: Location) {  }
 
   ngOnInit(): void {
     if (this.location.path() === "/projects") {
