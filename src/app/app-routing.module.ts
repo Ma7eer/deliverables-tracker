@@ -5,6 +5,9 @@ import { ViewProjectsComponent } from './view-projects/view-projects.component'
 const routes: Routes = [
   {
     path: 'projects', component: ViewProjectsComponent
+  },
+  {
+    path: '', redirectTo: '/projects', pathMatch: 'full' 
   }
 ];
 
