@@ -12,6 +12,10 @@ th.mat-sort-header-sorted {
   color: black;
 }
 
-button {
+.my-add-new-project-button {
   margin-bottom: 12px;
+}
+
+.my-action-button {
+  margin: 0px 5px;
 }
