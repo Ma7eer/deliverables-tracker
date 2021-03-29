@@ -1,0 +1,12 @@
+<h1>Add a new project</h1>
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Project Name</mat-label>
+    <input matInput value="{{data.projectName}}">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Project Description</mat-label>
+    <textarea matInput value="{{data.projectDescription}}"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="handleAddNewProjectFormSubmit()">Submit</button>
+</form>
